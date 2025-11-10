@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditi Jhanwar | Strategy & Operations</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+        * {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .hover-lift:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        .section-padding {
+            padding: 5rem 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .section-padding {
+                padding: 3rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
+        <div class="max-w-5xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#home" class="text-xl font-semibold">
+                    <img src="logo.png" alt="AJ Logo" class="h-10 w-auto">
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="hover:text-purple-600 transition">About</a>
+                    <a href="#work" class="hover:text-purple-600 transition">Work</a>
+                    <a href="#projects" class="hover:text-purple-600 transition">Projects</a>
+                    <a href="#writing" class="hover:text-purple-600 transition">Writing</a>
+                    <a href="#contact" class="hover:text-purple-600 transition">Contact</a>
+                </div>
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-btn" class="md:hidden">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 space-y-3">
+                <a href="#about" class="block hover:text-purple-600">About</a>
+                <a href="#work" class="block hover:text-purple-600">Work</a>
+                <a href="#projects" class="block hover:text-purple-600">Projects</a>
+                <a href="#writing" class="block hover:text-purple-600">Writing</a>
+                <a href="#contact" class="block hover:text-purple-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center section-padding pt-32">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- Headshot -->
+                <div class="flex justify-center md:justify-end">
+                    <img src="headshot.jpg" alt="Aditi Jhanwar" class="w-80 h-auto object-contain rounded-2xl shadow-2xl">
+                </div>
+
+                <!-- Text Content -->
+                <div class="text-center md:text-left">
+                    <h1 class="text-5xl md:text-6xl font-bold mb-6">
+                        Hi, I'm <span class="gradient-text">Aditi</span>
+                    </h1>
+                    <p class="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed">
+                        Building data-driven strategies and systems that help organizations execute at scale.
+                    </p>
+                    <div class="flex flex-wrap justify-center md:justify-start gap-3 mb-12">
+                        <span class="px-3 py-1.5 bg-purple-50 text-purple-700 rounded-full text-sm font-medium">Strategy & Ops</span>
+                        <span class="px-3 py-1.5 bg-purple-50 text-purple-700 rounded-full text-sm font-medium">Process Optimization</span>
+                        <span class="px-3 py-1.5 bg-purple-50 text-purple-700 rounded-full text-sm font-medium">Corporate Strategy</span>
+                        <div class="w-full"></div>
+                        <span class="px-3 py-1.5 bg-purple-50 text-purple-700 rounded-full text-sm font-medium">VC</span>
+                        <span class="px-3 py-1.5 bg-purple-50 text-purple-700 rounded-full text-sm font-medium">Analytics</span>
+                        <span class="px-3 py-1.5 bg-purple-50 text-purple-700 rounded-full text-sm font-medium">Design Thinking</span>
+                        <span class="px-3 py-1.5 bg-purple-50 text-purple-700 rounded-full text-sm font-medium">Market Intelligence</span>
+                        <div class="w-full"></div>
+                        <span class="px-3 py-1.5 bg-purple-50 text-purple-700 rounded-full text-sm font-medium">Operational Scalability</span>
+                        <span class="px-3 py-1.5 bg-purple-50 text-purple-700 rounded-full text-sm font-medium">Financial Modeling</span>
+                        <span class="px-3 py-1.5 bg-purple-50 text-purple-700 rounded-full text-sm font-medium">Scenario Planning</span>
+                    </div>
+                    <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                        <a href="#work" class="px-8 py-3 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition">View Work</a>
+                        <a href="https://linkedin.com/in/ajhanwar" target="_blank" class="px-8 py-3 border border-gray-300 rounded-lg hover:border-gray-900 transition">LinkedIn</a>
+                        <a href="Aditi_Jhanwar_Resume -.pdf" target="_blank" class="px-8 py-3 border border-gray-300 rounded-lg hover:border-gray-900 transition">Resume</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding bg-gray-50">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold mb-12 text-center">About Me</h2>
+            <div class="prose prose-lg max-w-none">
+                <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                    Your "Swiss Army knife" for all things Strategy & Operations, GTM, and research—driving impact across organizations and scaling initiatives by turning ambiguity into simple actionable steps with measurable results. My commitment to operational efficiency and strategic alignment reflects a focus on creating value and enabling innovation in dynamic environments.
+                </p>
+                <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                    I'm a Strategy & Operations leader with experience advising AI-native startups, leading enterprise ML deployments at Fortune 500 companies, and scaling GTM operations. With VC experience and work with startups via UC Berkeley's Skydeck accelerator, I'm passionate about bridging the gap between strategy and execution.
+                </p>
+                <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                    My background spans <strong>AI-native platforms/tools</strong>, <strong>life sciences</strong>, <strong>ad-tech</strong>, <strong>entertainment</strong>, and <strong>deep tech</strong>, giving me a unique lens on how to build scalable systems across industries.
+                </p>
+                <div class="grid md:grid-cols-2 gap-8 mt-12 mb-12">
+                    <div>
+                        <h3 class="font-semibold text-lg mb-3">Education</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li>MBA, UC Berkeley Haas</li>
+                            <li>BS Business, USC Marshall</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-lg mb-3">Tools</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li>SQL, Tableau, Power BI, Excel</li>
+                            <li>Salesforce, Jira, Asana, Looker</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-12 pt-8 border-t border-gray-200">
+                    <h3 class="font-semibold text-lg mb-6 text-center">Organizations I've Worked With</h3>
+                    <div class="flex flex-wrap justify-center items-center gap-6">
+                        <img src="Logos/skydeck.jpg" alt="Berkeley SkyDeck" class="h-10 max-w-[120px] object-contain">
+                        <img src="Logos/haas impact funds.png" alt="Haas Impact Funds" class="h-10 max-w-[120px] object-contain">
+                        <img src="Logos/gilead sciences.svg" alt="Gilead Sciences" class="h-10 max-w-[120px] object-contain">
+                        <img src="Logos/kite pharma.png" alt="Kite Pharma" class="h-10 max-w-[120px] object-contain">
+                        <img src="Logos/xaxis.png" alt="Xaxis" class="h-10 max-w-[120px] object-contain">
+                        <img src="Logos/burst live.jpg" alt="Burst Live" class="h-10 max-w-[120px] object-contain">
+                        <img src="Logos/facet-AI.webp" alt="Facet AI" class="h-10 max-w-[120px] object-contain">
+                        <img src="Logos/nano dentica.png" alt="Nano Dentica" class="h-10 max-w-[120px] object-contain">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Work Section -->
+    <section id="work" class="section-padding">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-4xl font-bold mb-12 text-center">Featured Work</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Case Study 1 -->
+                <a href="work-warren.html" class="hover-lift bg-white rounded-xl p-6 border border-gray-200">
+                    <h3 class="text-xl font-bold mb-3">Accelerating PE Workflows with GenAI</h3>
+                    <p class="text-gray-600 mb-4">Enabled 40% faster due diligence for private equity firms through AI-powered automation and strategic pricing.</p>
+                    <div class="text-sm font-medium text-gray-900">Warren (AI Startup) →</div>
+                </a>
+
+                <!-- Case Study 2 -->
+                <a href="work-gilead-forecasting.html" class="hover-lift bg-white rounded-xl p-6 border border-gray-200">
+                    <h3 class="text-xl font-bold mb-3">$40M Strategic Advantage Through ML</h3>
+                    <p class="text-gray-600 mb-4">Built ML-powered forecasting tool improving accuracy by 10% at Gilead Sciences.</p>
+                    <div class="text-sm font-medium text-gray-900">Gilead Sciences →</div>
+                </a>
+
+                <!-- Case Study 3 -->
+                <a href="work-xaxis.html" class="hover-lift bg-white rounded-xl p-6 border border-gray-200">
+                    <h3 class="text-xl font-bold mb-3">From $600K to $3M: Scalable GTM</h3>
+                    <p class="text-gray-600 mb-4">Built data-driven GTM playbooks driving 200%+ revenue growth at Xaxis.</p>
+                    <div class="text-sm font-medium text-gray-900">Xaxis →</div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding bg-gray-50">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-4xl font-bold mb-12 text-center">Strategic Projects</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+
+                <!-- Project 1 -->
+                <a href="project-recruiting.html" class="hover-lift bg-white rounded-xl p-8 border border-gray-200">
+                    <h3 class="text-2xl font-bold mb-4">Building a Recruiting Operation from Zero</h3>
+                    <p class="text-gray-600 mb-6">A framework for early-stage startups to scale hiring without compromising quality—covering ATS selection, hiring budgets, and org design.</p>
+                    <div class="text-sm font-medium text-gray-900">Read more →</div>
+                </a>
+
+                <!-- Project 2 -->
+                <a href="project-wealth-mgmt.html" class="hover-lift bg-white rounded-xl p-8 border border-gray-200">
+                    <h3 class="text-2xl font-bold mb-4">Strategic Revenue Growth for $10T Wealth Management Firm</h3>
+                    <p class="text-gray-600 mb-6">How I helped a leading financial services company capture 1% more market share through advisor network expansion, alternatives, and Gen Z engagement.</p>
+                    <div class="text-sm font-medium text-gray-900">Read more →</div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Writing Section -->
+    <section id="writing" class="section-padding">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-4xl font-bold mb-12 text-center">Writing</h2>
+            <div class="space-y-6">
+
+                <!-- White Paper -->
+                <a href="whitepaper-ai-economics.html" class="block hover-lift bg-white rounded-xl p-8 border border-gray-200">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <div class="text-sm text-green-600 font-semibold mb-2">WHITE PAPER</div>
+                            <h3 class="text-2xl font-bold mb-2">The New Economics of AI: A Framework for Pricing, Scaling, and Value Capture</h3>
+                            <p class="text-gray-600">How AI-native products should be priced differently from traditional SaaS—with case studies from seed/Series A startups.</p>
+                        </div>
+                    </div>
+                    <div class="text-sm font-medium text-gray-900">Read full paper →</div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-gray-50">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-6">Let's Connect</h2>
+            <p class="text-xl text-gray-600 mb-8">
+                I'm always open to discussing strategy, operations, and new opportunities.
+            </p>
+            <div class="flex justify-center space-x-6">
+                <a href="mailto:jhanwar.aditi@gmail.com" class="px-8 py-3 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition">
+                    Email Me
+                </a>
+                <a href="https://linkedin.com/in/ajhanwar" target="_blank" class="px-8 py-3 border border-gray-300 rounded-lg hover:border-gray-900 transition">
+                    LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-gray-200">
+        <div class="max-w-5xl mx-auto px-6 text-center text-gray-600">
+            <p>© 2025 Aditi Jhanwar. Built with curiosity and caffeine.</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+
+</body>
+</html>
