@@ -66,6 +66,21 @@
             border-color: #1f2937;
             color: white;
         }
+
+        .btn-gradient {
+            background: linear-gradient(135deg, #FFB499 0%, #FF8370 50%, #D94F5C 100%);
+            color: white;
+            font-weight: 600;
+            padding: 0.5rem 1.5rem;
+            border-radius: 0.5rem;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            border: none;
+        }
+
+        .btn-gradient:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(255, 131, 112, 0.3);
+        }
     </style>
 </head>
 <body class="bg-white text-gray-900">
@@ -77,11 +92,12 @@
                 <a href="#home" class="text-xl font-semibold">
                     <img src="logo name.png" alt="Aditi Jhanwar Logo" class="h-10 w-auto">
                 </a>
-                <div class="hidden md:flex space-x-8">
+                <div class="hidden md:flex space-x-8 items-center">
                     <a href="#about" class="nav-link transition">About</a>
                     <a href="#work" class="nav-link transition">Work</a>
                     <a href="#projects" class="nav-link transition">Projects</a>
                     <a href="#contact" class="nav-link transition">Contact</a>
+                    <a href="https://calendly.com/jhanwar-aditi/30min" target="_blank" id="book-meeting-btn" class="btn-gradient">Book A Meeting</a>
                 </div>
                 <!-- Mobile menu button -->
                 <button id="mobile-menu-btn" class="md:hidden">
@@ -176,14 +192,14 @@
 
         <div class="max-w-6xl mx-auto px-6 mt-12 pt-8 border-t border-gray-200">
             <div class="flex flex-wrap justify-center items-center gap-4">
-                <img src="Logos/skydeck.jpg" alt="Berkeley SkyDeck" class="h-20 max-w-[160px] object-contain">
-                <img src="Logos/HIF.png" alt="Haas Impact Funds" class="h-14 max-w-[130px] object-contain">
-                <img src="Logos/gilead sciences.png" alt="Gilead Sciences" class="h-20 max-w-[160px] object-contain">
-                <img src="Logos/kite pharma.png" alt="Kite Pharma" class="h-20 max-w-[160px] object-contain">
-                <img src="Logos/xaxis.png" alt="Xaxis" class="h-20 max-w-[160px] object-contain">
-                <img src="Logos/burst live.jpg" alt="Burst Live" class="h-20 max-w-[160px] object-contain">
-                <img src="Logos/facet ai.png" alt="Facet AI" class="h-20 max-w-[160px] object-contain">
-                <img src="Logos/nano dentica.png" alt="Nano Dentica" class="h-14 max-w-[130px] object-contain">
+                <a href="https://skydeck.berkeley.edu" target="_blank"><img src="Logos/skydeck.jpg" alt="Berkeley SkyDeck" class="h-20 max-w-[160px] object-contain"></a>
+                <a href="https://haas.berkeley.edu/students/student-resources/haas-impact-fund/" target="_blank"><img src="Logos/HIF.png" alt="Haas Impact Funds" class="h-14 max-w-[130px] object-contain"></a>
+                <a href="https://www.gilead.com" target="_blank"><img src="Logos/gilead sciences.png" alt="Gilead Sciences" class="h-20 max-w-[160px] object-contain"></a>
+                <a href="https://www.kitepharma.com" target="_blank"><img src="Logos/kite pharma.png" alt="Kite Pharma" class="h-20 max-w-[160px] object-contain"></a>
+                <a href="https://www.xaxis.com" target="_blank"><img src="Logos/xaxis.png" alt="Xaxis" class="h-20 max-w-[160px] object-contain"></a>
+                <a href="https://www.burstlive.com" target="_blank"><img src="Logos/burst live.jpg" alt="Burst Live" class="h-20 max-w-[160px] object-contain"></a>
+                <a href="https://www.facet.ai" target="_blank"><img src="Logos/facet ai.png" alt="Facet AI" class="h-20 max-w-[160px] object-contain"></a>
+                <a href="https://www.nanodentica.com" target="_blank"><img src="Logos/nano dentica.png" alt="Nano Dentica" class="h-14 max-w-[130px] object-contain"></a>
             </div>
         </div>
     </section>
@@ -256,7 +272,7 @@
         <div class="max-w-3xl mx-auto text-center">
             <h2 class="text-4xl font-bold mb-6"><span style="background: linear-gradient(135deg, #FFB499 0%, #FF8370 50%, #D94F5C 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Let's Connect</span></h2>
             <p class="text-xl text-gray-600 mb-8">
-                I'm always open to discussing strategy, operations, and new opportunities.
+                I'm always open to discussing strategy, operations, and new ideas.
             </p>
             <div class="flex justify-center space-x-6">
                 <a href="mailto:jhanwar.aditi@gmail.com" class="px-8 py-3 btn-white rounded-lg transition">
