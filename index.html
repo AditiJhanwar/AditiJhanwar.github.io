@@ -32,6 +32,15 @@
             box-shadow: 0 20px 40px rgba(0,0,0,0.1);
         }
 
+        .hover-lift-purple {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .hover-lift-purple:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(139, 92, 246, 0.3);
+        }
+
         .section-padding {
             padding: 5rem 1.5rem;
         }
@@ -186,21 +195,21 @@
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
                 <!-- Case Study 1 -->
-                <a href="work-warren.html" class="hover-lift bg-white rounded-xl p-6 border border-gray-200">
+                <a href="work-warren.html" class="hover-lift-purple bg-white rounded-xl p-6 border border-gray-200">
                     <h3 class="text-xl font-bold mb-3">Accelerating PE Workflows with GenAI</h3>
                     <p class="text-gray-600 mb-4">Enabled 40% faster due diligence for private equity firms through AI-powered automation and strategic pricing.</p>
                     <div class="text-sm font-medium text-gray-900">Warren (AI Startup) →</div>
                 </a>
 
                 <!-- Case Study 2 -->
-                <a href="work-gilead-forecasting.html" class="hover-lift bg-white rounded-xl p-6 border border-gray-200">
+                <a href="work-gilead-forecasting.html" class="hover-lift-purple bg-white rounded-xl p-6 border border-gray-200">
                     <h3 class="text-xl font-bold mb-3">$40M Strategic Advantage Through ML</h3>
                     <p class="text-gray-600 mb-4">Built ML-powered forecasting tool improving accuracy by 10% at Gilead Sciences.</p>
                     <div class="text-sm font-medium text-gray-900">Gilead Sciences →</div>
                 </a>
 
                 <!-- Case Study 3 -->
-                <a href="work-xaxis.html" class="hover-lift bg-white rounded-xl p-6 border border-gray-200">
+                <a href="work-xaxis.html" class="hover-lift-purple bg-white rounded-xl p-6 border border-gray-200">
                     <h3 class="text-xl font-bold mb-3">From $600K to $3M: Scalable GTM</h3>
                     <p class="text-gray-600 mb-4">Built data-driven GTM playbooks driving 200%+ revenue growth at Xaxis.</p>
                     <div class="text-sm font-medium text-gray-900">Xaxis →</div>
